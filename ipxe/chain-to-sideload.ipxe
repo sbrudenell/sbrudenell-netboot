@@ -1,0 +1,10 @@
+#!ipxe
+
+# TODO: figure out other platforms
+set sideload-uri file:IPXE.CFG
+echo Loading ${sideload-uri} ...
+chain --autofree --replace ${sideload-uri} ||
+echo
+echo Boot script failed!
+echo Will exit in 10 seconds
+prompt --timeout 10000 Press any key to exit

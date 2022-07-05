@@ -1,0 +1,11 @@
+#define DIGEST_CMD
+#define NET_PROTO_IPV6
+#define DOWNLOAD_PROTO_HTTPS
+#define IMAGE_TRUST_CMD
+#define NSLOOKUP_CMD
+#define PING_CMD
+#define REBOOT_CMD
+#define NTP_CMD
+#define PCI_CMD
+#define TIME_CMD
+#define VLAN_CMD

@@ -6,9 +6,9 @@ comma:=,
 empty:=
 space:= $(empty) $(empty)
 
-EMBED=$(PWD)/chain-to-sideload.ipxe
+EMBED=$(CURDIR)/chain-to-sideload.ipxe
 ALLCERTS=ipxe-ca.pem isrgrootx1.pem lets-encrypt-r3.pem
-CERT=$(subst $(space),$(comma),$(addprefix $(PWD)/,$(ALLCERTS)))
+CERT=$(subst $(space),$(comma),$(addprefix $(CURDIR)/,$(ALLCERTS)))
 TRUST=$(CERT)
 
 all: ipxe
